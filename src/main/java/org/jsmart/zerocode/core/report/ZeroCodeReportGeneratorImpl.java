@@ -80,6 +80,7 @@ public class ZeroCodeReportGeneratorImpl implements ZeroCodeReportGenerator {
                 dataArrayBuilder.kv(ZeroCodeChartKeyValueBuilder.newInstance()
                         .key(thisRow.getScenarioName() + "->" + thisRow.getStepName())
                         .value(thisRow.getResponseDelayMilliSec())
+                        .result(thisRow.getResult())
                         .build())
         );
 
